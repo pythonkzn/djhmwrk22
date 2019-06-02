@@ -1,0 +1,13 @@
+{% extends "app/base.html" %}
+{% block title %}<title> Примеры </title>{% endblock %}
+{% block navbar1 %}
+<li class="active"><a href="{% url 'examples' %}">Примеры</a></li>
+{% endblock %}
+{% block content %}
+    <div class="row">
+      <div class="col s12">
+        <h1 class="col s12">Каталог компьютеров Apple</h1>
+        {% include "app/render_comp.html" %}
+      </div>
+    </div>
+{% endblock %}
